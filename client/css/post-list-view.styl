@@ -3,7 +3,7 @@
 .post-list
     ul
         list-style-type: none
-        margin: 0
+        margin: 0 8rem
         padding: 0
         display: flex
         align-content: flex-end
@@ -17,7 +17,7 @@
             display: inline-block
             text-align: left
             min-width: 10em
-            width: 12vw
+            width: 14vw
             &:not(.flexbox-dummy)
                 min-height: 7.5em
                 height: 9vw
@@ -30,7 +30,7 @@
                 font-size: 80%
                 color: white
                 outline-offset: -3px
-                box-shadow: 0 0 0 1px rgba(0,0,0,0.2)
+                //box-shadow: 0 0 0 1px rgba(0,0,0,0.2)
 
                 .type, .stats
                     position: absolute
@@ -142,8 +142,9 @@
                 width: 100%
                 height: 100%
                 outline-offset: -3px
+
                 &:not(.empty)
-                    background-position: 50% 30%
+                    background-position: 50% 50%
 
             .thumbnail-wrapper.no-tags
                 .thumbnail
@@ -157,6 +158,7 @@
             &:hover a, a:active, a:focus
                 .thumbnail
                     outline: 4px solid $main-color !important
+                    border-radius: 0.25rem
 
 .post-flow
     ul

@@ -1,6 +1,19 @@
 @import colors
 @import mixins
 
+input, button, img, div, li, .message {
+    border-radius: 0.25rem !important
+}
+
+img, a {
+    border-radius: 0.5rem !important
+}
+
+//a {
+//    border-radius: 0.75rem !important
+//}
+
+
 $active-tab-text-color = $text-color
 $active-tab-text-color-darktheme = $text-color-darktheme
 $inactive-tab-text-color = $inactive-link-color
@@ -60,6 +73,7 @@ a
     color: $main-color
     text-decoration: none
     transition: color 0.1s linear
+    border-radius: 0.25rem
     &.inactive
         color: $inactive-link-color
         cursor: default
@@ -284,7 +298,7 @@ a .access-key
     /*background-image: attr(data-src url)*/ /* not available yet */
     vertical-align: middle
     background-repeat: no-repeat
-    background-size: cover
+    background-size: contain
     background-position: center
     display: inline-block
     width: 20px

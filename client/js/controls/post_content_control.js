@@ -127,7 +127,8 @@ class PostContentControl {
             }
         }
 
-        this._currentFitFunction();
+        // this._currentFitFunction();
+        this.fitBoth()
     }
 
     _install() {
